@@ -69,8 +69,11 @@ To make things easy, we provide simple VOC and COCO dataset loader that inherits
 ```Shell
 # specify a directory for dataset to be downloaded into, else default is ~/data/
 sh data/scripts/VOC2007.sh # <directory>
-```
 
+```Shell
+#If your dataset is not placed in the root path, change the dataset path at data/voc0712.py:
+ self.root = '***/VOCdevkit' # <diretory>
+```
 ##### Download VOC2012 trainval
 
 ```Shell
