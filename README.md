@@ -70,9 +70,8 @@ To make things easy, we provide simple VOC and COCO dataset loader that inherits
 # specify a directory for dataset to be downloaded into, else default is ~/data/
 sh data/scripts/VOC2007.sh # <directory>
 
-```Shell
 #If your dataset is not placed in the root path, change the dataset path at data/voc0712.py:
- self.root = '***/VOCdevkit' # <diretory>
+ self.root = '***/VOCdevkit' # <*** is the path the find VOCdevkit>
 ```
 ##### Download VOC2012 trainval
 
@@ -91,6 +90,8 @@ $COCO/images/test2015/
 $COCO/images/train2014/
 $COCO/images/val2014/
 ```
+If your dataset is not placed in the root path, change the dataset path at data/coco.py
+
 *UPDATE*: The current COCO dataset has released new *train2017* and *val2017* sets which are just new splits of the same image sets. 
 
 ## Training
